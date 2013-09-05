@@ -1,0 +1,11 @@
+development: &development
+        adapter: postgresql
+        database: blank_dev
+        username: ajay
+        password: 
+        host: localhost
+        min_messages: warning
+
+  test: &test
+       <<: *development
+       database: blank_test
